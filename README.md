@@ -1,5 +1,5 @@
 # PubMed
-В проекте мы производим FT [[GPT-2]] с помощью [[LoRa]]  на медецинских данных ,и проверяем точность ответов на QA датасете с ответами (yes/no)
+В проекте мы производим FT GPT-2 с помощью LoRa  на медецинских данных ,и проверяем точность ответов на QA датасете с ответами (yes/no)
 
 ## Данные
 
@@ -7,14 +7,14 @@
 PubMedQA - https://huggingface.co/datasets/qiaojin/PubMedQA
 PubMed - https://huggingface.co/datasets/ncbi/pubmed
 
-# Ход работы
+## Ход работы
 В файле nootebooks/TokeniseData.ipynb происходиоа токенизация датасета PubMed
-Используя [[LoRa]] на данных из PubMed обучалась модель 
+Используя LoRa на данных из PubMed обучалась модель 
 Цикл обучения в nootebooks/StudyModel.ipynb 
 Далее произовдились замеры эфективности модели на PubMedQA
 Код оценки в nootebooks/LaunchExperiments.ipynb
 
-# Итоговые результаты
+## Итоговые результаты
 | GPT-2 | Precision | Recall |
 | ----- | --------- | ------ |
 | yes   | 0.576     | 0.496  |
